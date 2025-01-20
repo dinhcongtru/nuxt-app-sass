@@ -1,5 +1,4 @@
 <template>
-    <ClientOnly>
         <div class="slide_present">
             <Splide :options="props.options" aria-labelledby="slide present top" :has-track="false">
                 <SplideTrack>
@@ -14,7 +13,7 @@
                                     <UIcon :name="e.chip" class="icon_chip" />
                                 </span>
                                 <button type="button" class="btn">{{ e.button }}</button>
-                                <NuxtImg :src="e.image" width="54" class="card_img" height="54" alt="card-img" />
+                                <NuxtImg :src="e.image" width="54" class="card_img" height="55" alt="card-img" />
                             </div>
                         </div>
                     </SplideSlide>
@@ -29,7 +28,6 @@
                 </div>
             </Splide>
         </div>
-    </ClientOnly>
 </template>
 
 <script lang="ts" setup>
