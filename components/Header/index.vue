@@ -9,6 +9,6 @@
 <script lang="ts" setup>
 
 </script>
-<style lang="sass">
+<style lang="sass" type="text/sass">
 @import './header'
 </style>
