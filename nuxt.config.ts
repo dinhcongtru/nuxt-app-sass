@@ -4,19 +4,23 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/image','nuxt-splide'],
   image: {
-    dir: 'assets/images'
+    dir: 'assets/images',
+    baseURL: '/_ipx/',
+    provider: "ipx",
   },
-  css: ['~/assets/styles/style.sass','~/assets/styles/libs/ui.sass'],
   vite: {
     css: {
       preprocessorOptions: {
         sass: {
-          additionalData: '@use "~/assets/styles/global.sass" as *\n',
+          additionalData: '@use "~/assets/styles/style.sass" as *\n',
         },
       },
     },
   },
   splide: {
     theme: 'default'
+  },
+  app: {
+    baseURL: '/nuxt-app-sass/'
   },
 })

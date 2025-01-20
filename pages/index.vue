@@ -5,7 +5,7 @@
         <div class="inner">
           <div class="bg_banner">
             <div class="thumb">
-              <NuxtImg src="/bg-agoda-homepage.png" width="100%" height="100%" alt="banner top" />
+              <NuxtImg src="/bg-agoda-homepage.png" width="100" height="100" alt="banner top" />
             </div>
           </div>
           <SectionBannerTop />
