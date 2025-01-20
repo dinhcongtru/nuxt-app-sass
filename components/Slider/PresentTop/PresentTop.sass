@@ -1,0 +1,67 @@
+.slide_present
+    padding: 16px 0
+    border-radius: 16px
+    background-color: #e5efff
+    text-align: left
+    .splide__slide 
+        margin-left: 12px
+        .item
+            display: flex
+            align-items: center
+            line-height: 1.5
+        .content
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+                width: 1px
+                height: 80px
+                border-right: 2px dotted #5e6b8252 
+            .title
+                font-size: 14px
+                font-weight: 600
+                @include txtClamp(1)
+                margin-bottom: 3px
+            .txt
+                color: rgb(94, 107, 130)
+                font-size: 12px
+        .control 
+            display: flex
+            position: relative
+            align-items: center
+            justify-content: center
+            gap: 12px
+            .chip
+                position: absolute
+                top: 0
+                right: 0
+                width: 24px
+                height: 24px
+                display: block
+                background-color: #fee9e5
+                border-top-right-radius: 16px
+                border-bottom-left-radius: 16px
+                .icon_chip
+                    font-size: 16px
+            .btn
+                border-radius: 999px
+                padding: 1px 12px
+                background-color: #2067da
+                color: #fff
+                font-size: 14px
+                font-weight: 600
+                @include txtClamp(1)
+            .card_img
+                width: 54px
+                height: 54px
+                object-fit: cover
+        .content,.control
+            height: 80px
+            flex: 1
+            border-radius: 16px
+            background-color: #fff
+            padding: 12px
+            overflow: hidden
