@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     dir: 'assets/images',
     baseURL: '/_ipx/',
     provider: "ipx",
+    format: ['webp','jpg','png','svg','jpeg','gif','avif']
   },
   vite: {
     css: {
